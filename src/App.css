@@ -197,3 +197,32 @@ header a:hover {
 i[class*='dessert--type'] {
   padding: 7px 14px;
 }
+
+/*dessert detail*/
+.dessert--detail--box {
+  padding: 25px;
+}
+.dessert--detail {
+  display: flex;
+  flex-direction: column;
+  color: #161616;
+}
+.dessert--detail img {
+  border-radius: 5px;
+  margin-block: 20px;
+}
+.dessert--detail h2 {
+  font-size: 2rem;
+  margin-bottom: 7px;
+}
+.dessert--detail i {
+  align-self: flex-start;
+}
+.dessert--detail.dessert--price {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.dessert--detail.dessert--price span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}

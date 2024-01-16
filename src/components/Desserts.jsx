@@ -25,8 +25,8 @@ export default function Desserts() {
           height="200px"
         />
         <div className="dessert--info">
-          <h3>{dessert.name}</h3>
-          <p>
+          <h2>{dessert.name}</h2>
+          <p className="dessert--price">
             ${dessert.price}
             <span>/per</span>
           </p>
