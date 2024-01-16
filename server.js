@@ -13,6 +13,7 @@ createServer({
       description: 'Hello this is macaron',
       imageUrl: './public/assets/desserts/macaron.jpg',
       type: 'French',
+      hostId: '001',
     });
     server.create('dessert', {
       id: '2',
@@ -22,6 +23,7 @@ createServer({
       description: 'Hello this is tiramisu',
       imageUrl: './public/assets/desserts/tiramisu.jpg',
       type: 'Italian',
+      hostId: '002',
     });
     server.create('dessert', {
       id: '3',
@@ -31,6 +33,7 @@ createServer({
       description: 'hello this is apple pie',
       imageUrl: './public/assets/desserts/applePie.jpg',
       type: 'American',
+      hostId: '001',
     });
     server.create('dessert', {
       id: '4',
@@ -40,6 +43,7 @@ createServer({
       description: 'hello this is mont blanc',
       imageUrl: './public/assets/desserts/montBlanc.jpg',
       type: 'French',
+      hostId: '002',
     });
     server.create('dessert', {
       id: '5',
@@ -49,6 +53,7 @@ createServer({
       description: 'Hello this is Cannoli',
       imageUrl: './public/assets/desserts/cannoli.jpg',
       type: 'Italian',
+      hostId: '002',
     });
     server.create('dessert', {
       id: '6',
@@ -58,6 +63,7 @@ createServer({
       description: 'Hello this is boston pie',
       imageUrl: './public/assets/desserts/bostonPie.jpg',
       type: 'American',
+      hostId: '001',
     });
   },
   routes() {
@@ -71,6 +77,17 @@ createServer({
     this.get('/desserts/:id', (schema, request) => {
       let id = request.params.id;
       return schema.desserts.find(id);
+    });
+
+    this.get('/host/desserts', (schema) => {
+      //hard-code hostId now
+      return schema.desserts.where({ hostId: '001' });
+    });
+
+    this.get('/host/desserts/:id', (schema, request) => {
+      //hard-code hostId now
+      let id = request.params.id;
+      return schema.desserts.where({ id, histId: '001' });
     });
   },
 });
