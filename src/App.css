@@ -42,6 +42,11 @@ header a:hover {
   color: #e8fcc2;
   font-size: 30px;
 }
+a.active--link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #e8fcc2;
+}
 .site--icon {
   width: 100px;
   padding-left: 20px;
