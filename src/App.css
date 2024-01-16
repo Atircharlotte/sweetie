@@ -226,3 +226,20 @@ i[class*='dessert--type'] {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
+/*host--nav*/
+.host--nav {
+  display: flex;
+}
+
+.host--nav a {
+  text-decoration: none;
+  color: #2e5077;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+.host--nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 600;
+}

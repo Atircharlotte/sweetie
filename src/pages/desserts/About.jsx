@@ -6,7 +6,7 @@ export default function About() {
       <img src="../public/assets/happiness.jpg" alt="cake is happiness" />
       <div className="about--content">
         <h1>
-          "Happiness is a piece of cake."
+          Happiness is a piece of cake.
           <br />
           SWETTIE provides one-of-a-kind flavor especially for you.
         </h1>
