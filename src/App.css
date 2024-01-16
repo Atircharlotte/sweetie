@@ -1,0 +1,199 @@
+/*
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mukta&family=Space+Grotesk:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/*navbar*/
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #611c35;
+}
+header .site--name {
+  color: white;
+  margin-right: auto;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: #b09398;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+header a:hover {
+  color: #e8fcc2;
+  font-size: 30px;
+}
+.site--icon {
+  width: 100px;
+  padding-left: 20px;
+  border-radius: 50% 50%;
+}
+/*footer*/
+.footer {
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  background-color: #611c35;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+/*home page*/
+.home {
+  background: url('./public/assets/cakeIntro.jpg') no-repeat center center;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  color: white;
+  padding: 45px 23px;
+}
+
+.home h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 50px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.home h4 {
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.desserts--button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4da1a9;
+  border: none;
+  width: 30%;
+  margin-top: 27px;
+  padding-block: 0.75rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.desserts--button:hover {
+  transform: translate(2px, 2px);
+}
+
+/*about page*/
+.about > img {
+  width: 100%;
+}
+
+.about--content {
+  padding-inline: 30px;
+  color: black;
+  margin-bottom: 45px;
+}
+
+.about--content h1 {
+  line-height: 40px;
+}
+.about--content p {
+  line-height: 25px;
+}
+.about--bio {
+  background-color: #2e5077;
+  color: white;
+  padding-inline: 25px;
+  padding-bottom: 25px;
+  margin-inline: 30px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.about--bio h2 {
+  margin: 0;
+  padding-block: 30px;
+}
+
+/*desserts page*/
+.desserts--all {
+  padding-inline: 30px; /*what is this for??????*/
+}
+.desserts--ls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  margin-top: 57px;
+  margin-bottom: 25px;
+}
+.dessert--title a {
+  color: #161616;
+  text-decoration: none;
+}
+.dessert--title img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.desserts--all button {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.dessert--type {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #4da1a9;
+  color: white;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dessert--type:hover {
+  color: #ffead0;
+}
+
+.dessert--type:focus {
+  outline: none;
+}
+.dessert--type.selected {
+  color: #ffead0;
+}
+.dessert--type.French:hover,
+.dessert--type.French.selected {
+  background-color: #e17654;
+}
+.dessert--type.american:hover,
+.dessert--type.American.selected {
+  background-color: #115e59;
+}
+.dessert--type.Italian:hover,
+.dessert--type.Italian.selected {
+  background-color: #161616;
+}
+
+i[class*='dessert--type'] {
+  padding: 7px 14px;
+}
