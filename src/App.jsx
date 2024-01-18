@@ -12,6 +12,8 @@ import Reviews from './pages/Host/Reviews.jsx';
 import HostLayout from './components/HostLayout.jsx';
 import HostDesserts from './pages/Host/HostDesserts.jsx';
 import HostDessertsDetail from './pages/Host/HostDessertsDetail.jsx';
+import HostDsPricing from './pages/Host/HostDsPricing.jsx';
+import HostDsInfo from './pages/Host/HostDsInfo.jsx';
 
 function App() {
   return (
@@ -29,7 +31,10 @@ function App() {
             <Route path="reviews" element={<Reviews />} />
 
             <Route path="desserts" element={<HostDesserts />} />
-            <Route path="desserts/:id" element={<HostDessertsDetail />} />
+            <Route path="desserts/:id" element={<HostDessertsDetail />}>
+              <Route index element={<HostDsInfo />} />
+              <Route path="pricing" element={<HostDsPricing />} />
+            </Route>
           </Route>
         </Route>
       </Routes>

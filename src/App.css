@@ -285,3 +285,73 @@ i[class*='dessert--type'] {
 .host--ds--total {
   margin-top: 40px;
 }
+/*host desserts detail*/
+.host--ds--detail--section {
+  margin-top: 50px;
+  justify-content: center;
+}
+.host--ds--detail--layout--container {
+  background-color: #d7e8ba;
+  padding: 30px;
+  margin: 30px 30px;
+}
+
+.host--ds--detail {
+  display: flex;
+  align-items: center;
+}
+
+.host--ds--detail > img {
+  height: 160px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.host--ds--detail--info--text > h3 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.host--ds--detail--info--text > h4 {
+  font-size: 20px;
+  margin-block: 0;
+}
+/*host dessert detail navbar*/
+.host--ds--detail--nav {
+  display: flex;
+  margin-block: 25px;
+}
+.host--ds--detail--nav a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.host--ds--detail--nav a:first-of-type {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 15px;
+  margin-left: -15px;
+}
+
+.host--ds--detail--nav a:hover {
+  color: #2e5077;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.host--ds--detail--info > h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+.host--ds--detail--info > h4 > span {
+  font-weight: 200;
+}
+
+.host--ds--price > span {
+  font-weight: 200;
+  color: #4d4d4d;
+}
