@@ -14,6 +14,7 @@ import HostDesserts from './pages/Host/HostDesserts.jsx';
 import HostDessertsDetail from './pages/Host/HostDessertsDetail.jsx';
 import HostDsPricing from './pages/Host/HostDsPricing.jsx';
 import HostDsInfo from './pages/Host/HostDsInfo.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
               <Route path="pricing" element={<HostDsPricing />} />
             </Route>
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
