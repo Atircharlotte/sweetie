@@ -1,29 +1,45 @@
 import React from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams, useLoaderData } from 'react-router-dom';
+import { getDesserts } from '../../../api';
 
+export function loader() {
+  return getDesserts();
+}
 export default function Desserts() {
-  const [desserts, setDesserts] = React.useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
+  //error state
+  const [error, setError] = React.useState(null);
   //query params
   const typeFilter = searchParams.get('type');
+  /*
   //send get request
   React.useEffect(() => {
-    fetch('/api/desserts')
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`Network response was not ok: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((data) => setDesserts(data.desserts))
-      .catch((error) => console.error('Fetch error:', error));
+    async function loadDesserts() {
+      setLoading(true);
+      try {
+        const data = await getDesserts();
+        setDesserts(data);
+      } catch (err) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadDesserts();
   }, []);
+  */
+  //use loader function to fetch data instead of useEffect
+  const desserts = useLoaderData();
 
   //filtering type
   const displayedDs = typeFilter
     ? desserts.filter((dessert) => dessert.type === typeFilter)
     : desserts;
+  //error handling
+  if (error) {
+    return <h1>There was an error: {error.message}</h1>;
+  }
 
   //render list
   const dessertElements = displayedDs.map((dessert) => (
@@ -62,6 +78,10 @@ export default function Desserts() {
       }
       return prevParams;
     });
+  }
+
+  if (error) {
+    return <h1>There is an error: {error.message}</h1>;
   }
   return (
     <div>
