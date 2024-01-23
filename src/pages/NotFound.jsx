@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="notfound--box">
       <h1>Sorry, the page you were looking for is not found.</h1>
       <Link to="/">Return to home</Link>
-      <img alt="notfound" src="../public/assets/error.jpg" width="100%" />
+      <img alt="notfound" src="../assets/error.jpg" width="100%" />
     </div>
   );
 }

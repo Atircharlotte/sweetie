@@ -17,10 +17,7 @@ export default function HostDesserts() {
         className="host--ds--box"
       >
         <div className="ls--ds--one">
-          <img
-            src={`../../public/assets/desserts/${ds.recog}.jpg`}
-            alt={ds.name}
-          />
+          <img src={`../../assets/desserts/${ds.recog}.jpg`} alt={ds.name} />
           <div className="host--ds--info">
             <h3>{ds.name}</h3>
             <p>${ds.price}/per</p>

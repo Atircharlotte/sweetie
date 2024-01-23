@@ -33,7 +33,7 @@ export default function HostDessertsDetail() {
       <div className="host--ds--detail--layout--container">
         <div className="host--van--detail">
           <img
-            src={`../../public/assets/desserts/${dsDetail.recog}.jpg`}
+            src={`../../assets/desserts/${dsDetail.recog}.jpg`}
             alt={dsDetail.name}
             width="100px"
             height="100px"

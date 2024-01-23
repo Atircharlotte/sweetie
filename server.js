@@ -12,7 +12,7 @@ createServer({
       price: 100,
       description:
         'Macarons are delicate and colorful French pastries that have gained widespread popularity for their exquisite taste and appearance. These sweet treats consist of two almond meringue shells that sandwich a creamy filling, such as ganache, buttercream, or jam.',
-      imageUrl: './public/assets/desserts/macaron.jpg',
+      imageUrl: './assets/desserts/macaron.jpg',
       type: 'French',
       hostId: '001',
     });
@@ -23,7 +23,7 @@ createServer({
       price: 150,
       description:
         'Tiramisu is a classic Italian dessert known for its rich and indulgent flavor. The name "tiramisu" translates to "pick me up" or "cheer me up" in Italian, which may be attributed to the coffee and cocoa content that provides a caffeinated boost.',
-      imageUrl: './public/assets/desserts/tiramisu.jpg',
+      imageUrl: './assets/desserts/tiramisu.jpg',
       type: 'Italian',
       hostId: '002',
     });
@@ -34,7 +34,7 @@ createServer({
       price: 80,
       description:
         ' Apple pie is a classic and beloved dessert that has become an iconic symbol of American culinary traditions. It consists of a flaky pie crust filled with a sweet and spiced apple filling.',
-      imageUrl: './public/assets/desserts/applePie.jpg',
+      imageUrl: './assets/desserts/applePie.jpg',
       type: 'American',
       hostId: '001',
     });
@@ -45,7 +45,7 @@ createServer({
       price: 200,
       description:
         'Mont Blanc is a classic French dessert known for its elegant presentation and delightful combination of chestnut and cream flavors. The dessert is named after the highest mountain in the Alps, Mont Blanc, and its appearance is meant to resemble a snow-capped peak.',
-      imageUrl: './public/assets/desserts/montBlanc.jpg',
+      imageUrl: './assets/desserts/montBlanc.jpg',
       type: 'French',
       hostId: '002',
     });
@@ -56,7 +56,7 @@ createServer({
       price: 160,
       description:
         'Cannoli is a traditional Italian pastry that originated in Sicily. These delightful treats consist of a crispy, tube-shaped shell filled with a sweet and creamy filling, usually containing ricotta cheese. Cannoli are popular both in Italy and around the world, often associated with Italian-American cuisine.',
-      imageUrl: './public/assets/desserts/cannoli.jpg',
+      imageUrl: './assets/desserts/cannoli.jpg',
       type: 'Italian',
       hostId: '002',
     });
@@ -67,7 +67,7 @@ createServer({
       price: 100,
       description:
         "Boston Cream Pie is a classic American dessert that originated in Boston, Massachusetts. Despite its name, it's not actually a traditional pie but rather a cake. The dessert typically consists of two layers of sponge cake filled with a rich custard or pastry cream and topped with a smooth chocolate ganache",
-      imageUrl: './public/assets/desserts/bostonPie.jpg',
+      imageUrl: './assets/desserts/bostonPie.jpg',
       type: 'American',
       hostId: '001',
     });

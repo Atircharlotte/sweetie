@@ -24,7 +24,7 @@ export default function Dessertdetail() {
             &larr; <span>Back to {type} desserts</span>
           </Link>
           <img
-            src={`../public/assets/desserts/${dessert.recog}.jpg`}
+            src={`../assets/desserts/${dessert.recog}.jpg`}
             alt={dessert.name}
           />
           <i className={`dessert--type ${dessert.type} selected`}>
