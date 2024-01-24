@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
   return (
     <div className="about">
-      <img src="../assets/happiness.jpg" alt="cake is happiness" />
+      <img src="../../assets/happiness.jpg" alt="cake is happiness" />
       <div className="about--content">
         <h1>
           Happiness is a piece of cake.

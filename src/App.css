@@ -66,7 +66,7 @@ a.active--link {
 
 /*home page*/
 .home {
-  background: url('./assets/cakeIntro.jpg') no-repeat center center;
+  background: url('/assets/cakeIntro.jpg') no-repeat center center;
   height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;

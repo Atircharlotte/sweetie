@@ -3,11 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 export default function Header() {
   return (
     <header>
-      <img
-        src="../src/assets/siteLogo.jpg"
-        alt="site--logo"
-        className="site--icon"
-      />
+      <img src="/assets/siteLogo.jpg" alt="site--logo" className="site--icon" />
       <Link to="/" className="site--name">
         #SWEETIE
       </Link>
