@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <img
-        src="../assets/siteLogo.jpg"
+        src="../src/assets/siteLogo.jpg"
         alt="site--logo"
         className="site--icon"
       />
